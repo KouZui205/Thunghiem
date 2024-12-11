@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday [Tên Bạn]</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1 id="greeting">🎉 Chúc Mừng Sinh Nhật, [Tên Bạn]! 🎉</h1>
+        <p id="message">Chúc bạn có một ngày tuyệt vời, tràn ngập niềm vui và hạnh phúc! 🥳</p>
+        
+        <!-- Thêm ô nhập tên -->
+        <input type="text" id="nameInput" placeholder="Nhập tên bạn" />
+        
+        <!-- Nút để thay đổi thông điệp và phát nhạc -->
+        <button onclick="showBirthdayMessage()">Nhấn để chúc mừng!</button>
+    </div>
+
+    <div class="slideshow" style="display:none;" id="birthdayMessage">
+        <img id="image-slide" src="https://via.placeholder.com/300x200.png?text=Happy+Birthday" alt="Happy Birthday Image">
+        <p id="center-text">Chúc bạn một ngày thật vui vẻ và tràn ngập yêu thương!</p>
+
+        <!-- Nhúng nhạc từ GitHub -->
+        <audio id="background-music" autoplay loop>
+            <source src="https://raw.githubusercontent.com/KouZui205/duck/7b81be1e52d8d63bb921b6e8fba0607b0d1d2f52/Happy%20Birthday%20to%20You%20Always%2014%20%20AMEE%20x%20Ho%C3%A0ng%20D%C5%A9ng%20x%20Obito%20x%20H%E1%BB%A9a%20Kim%20Tuy%E1%BB%81n%20%20OFFICIAL%20LYRIC%20VIDEO.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
